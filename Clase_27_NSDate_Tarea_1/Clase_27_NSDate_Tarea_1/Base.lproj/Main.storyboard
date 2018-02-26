@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Clase_27_NSDate_Tarea_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha/Hora" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSm-2l-czF">
+                                <rect key="frame" x="16" y="40" width="288" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="yXo-rZ-Et8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcJ-YZ-M5M">
+                                <rect key="frame" x="62" y="182" width="194" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Gby-my-mSs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="comprobar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEq-8O-iOr"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PTl-5a-5wa">
+                                <rect key="frame" x="0.0" y="268" width="320" height="203"/>
+                                <date key="date" timeIntervalSinceReferenceDate="541342576.21465099">
+                                    <!--2018-02-26 12:56:16 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xcJ-YZ-M5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="9wy-Sa-e9g"/>
+                            <constraint firstItem="VSm-2l-czF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="A6Z-gc-xHO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PTl-5a-5wa" secondAttribute="bottom" constant="97" id="In9-bh-4NW"/>
+                            <constraint firstItem="PTl-5a-5wa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gVY-aY-3VY"/>
+                            <constraint firstItem="PTl-5a-5wa" firstAttribute="top" secondItem="xcJ-YZ-M5M" secondAttribute="bottom" constant="24" id="kAo-Jw-2Je"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xcJ-YZ-M5M" secondAttribute="trailing" constant="64" id="off-jj-R70"/>
+                            <constraint firstItem="VSm-2l-czF" firstAttribute="centerX" secondItem="PTl-5a-5wa" secondAttribute="centerX" id="tCX-Se-gOj"/>
+                            <constraint firstItem="xcJ-YZ-M5M" firstAttribute="top" secondItem="VSm-2l-czF" secondAttribute="bottom" constant="30" id="w5F-et-zTR"/>
+                            <constraint firstItem="VSm-2l-czF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wRY-PC-XTt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="PTl-5a-5wa" id="sLr-Qz-BGr"/>
+                        <outlet property="fechaHora" destination="VSm-2l-czF" id="PYN-Ob-bTO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-118" y="-32"/>
+        </scene>
+    </scenes>
+</document>
